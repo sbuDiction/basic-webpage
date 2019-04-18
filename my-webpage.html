@@ -11,7 +11,7 @@
             max-width: 250px;
             margin: auto;
             text-align: bottom;
-            font-family: Arial , Helvetica, sans-serif;
+            font-family: Arial, Helvetica, sans-serif;
             margin-bottom: 10px;
 
         }
@@ -23,12 +23,12 @@
 
         }
 
-        img {
+        /*img {
             width: 400px;
             float: left;
             margin-right: 10px;
             margin-bottom: 5px;
-        }
+        }*/
 
         .clearfix {
             overflow: auto;
@@ -50,7 +50,7 @@
 
         }
 
-        .city {
+        /*.city {
             background-color: rgba(0, 0, 0, 0.425);
             color: white;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -61,7 +61,7 @@
             background-color: rgba(66, 40, 160, 0.582);
             color: white;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
-        }
+        }*/
 
 
 
@@ -79,7 +79,7 @@
 
         }
 
-        .green {
+        /*.green {
             background-color: rgba(0, 0, 0, 0.425);
             color: white;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -95,10 +95,25 @@
             background-color: rgba(85, 179, 132, 0.103);
             color: black;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
-        }
+        }*/
 
         body {
             background-color: darkslategrey;
+        }
+
+
+
+        .cities {
+            display: flex;
+        }
+
+        .cities>div {
+            flex: 0, 1;
+        }
+
+        img {
+            padding: 10px;
+            width: 200px;
         }
     </style>
 
@@ -108,13 +123,13 @@
 
             <div class="profile">
                 <h2 style="text-align:left">Profile picture</h2>
-                <img src="pictcures/pic.jpg" alt="profile" style="width:50%;left:50px;" >
+                <img src="pictcures/pic.jpg" alt="profile" style="width:50%;left:50px;">
                 <h1>Sibusiso Nkosi</h1>
             </div>
         </div>
 
         <div class="city clearfix">
-            <img src="pictcures/newYork.jpg" alt="new-york">
+            <img src="pictcures/newYork.jpg" alt="new-york" style="float:left">
             <h2>New York</h2>
             <p>1. The Buildings
                 There’s a reason you’ll see so many people looking up when you visit New York! The architecture on
@@ -172,7 +187,8 @@
                     <td>goodbye</td>
                 </tr>
             </table>
-            <ul class="a">
+            <hr>
+            <!--<ul class="a">
                 <li>There are over 400 million Spanish speakers world-wide.</li>
                 <li>With more than 33 million speakers, Spanish is the second largest language in the United States.
                 </li>
@@ -191,56 +207,81 @@
                     memory sharp.</li>
             </ul>
 
-        </div>
-        <hr>
+        </div>-->
 
-        <div class="long">
-            <img src="pictcures/long.webp" alt="long-street">
-            <h1>Long-street</h1>
-            <p>Long Street could be described as the funkiest and loudest street in Cape Town, bustling with markets and
-                boerewors roll stands during the day and hosting parties of all kinds once the sun sets.</p>
-            <p>Once the vintage clothing shops and designers alleys are closed, attention is turned to the plethora of
-                bars, restaurants, pubs and clubs lining this iconic road. This road is always busy but in the
-                summertime locals and foreigners explore out onto the pavements at side walk cafes, sip cocktails
-                beneath umbrellas and party on the rooftops.</p>
-            <p>Places like Kennedys, Long Street Café and Mr. Pickwick’s have firmly made their mark and still attract
-                loyal customers. Newer restaurants such as Galbi, a Korean BBQ spot gather new followers in search of
-                different tastes whilst Royale is still said to produce the best gourmet burgers in the Western Cape.
-            </p>
-            <p>Once you’ve had your fill of pre-drinks and food, party the night away at Fiction with its mix of Indie,
-                Drum and Bass or dubstep nights or the Waiting Room complements with a rooftop lounge, sexy soulful
-                beats and Hip Hop nights bound to keep you grooving.</p>
-        </div>
-        <hr>
-        <div class="green">
-            <img src="pictcures/green.jpg" alt="green-market">
-            <h1>Green-market</h1>
-            <p>Greenmarket Square is one of the liveliest hubs in Cape Town. It’s the second oldest public space in Cape
-                Town, after the Grand Parade. There are many things to do at Greenmarket Square, from exploring the
-                market and grabbing a bite to eat, to exploring the art and discovering the story of the historic
-                cobbled square.</p>
-            <p>Every morning, traders lug carts loaded with wares to the square to set up, and by the the time the rest
-                of the city awakes the cobbled square is a bustling market filled with curios, food, buskers, jewellery,
-                clothing, and nick-nacks. This is one of the best places in Cape Town to buy curios and gifts for your
-                loved ones back home, while supporting the entrepreneurial traders. There are stunning canvas artworks
-                on sale, along with leather goods like sandals, hand-crafted jewellery, ornaments, and much more. You
-                could spend hours weaving between the colourful stalls, meeting some eccentric local characters and
-                finding treasures to take home with you. Remember that while bargaining is a big part of the informal
-                economy, the traders make their living on these sales so always pay a fair price and don’t haggle just
-                for the sake of it.</p>
-        </div>
-        <hr>
-        <div class="castle">
-            <img src="pictcures/castle.jpg" alt="castle-of-good-hope">
-            <h1>Castle of Good Hope </h1>
-            <ul class="b">
-                <li>The first stone was laid on 2 January 1666 and it was completed by April 1679</li>
-                <li>The materials used to build the Castle were local and included rock cut from the granite outcrop on
-                    Signal Hill, and blue slate and shells – transported from Robben Island</li>
-                <li>The Castle was built by soldiers, volunteers, slaves and Khoi undergoing punishment. The building
-                    housed everything from a church, bakery and living quarters, to various workshops, shops and prison
-                    cells, among other facilities</li>
-                <li>The Castle was never attacked. Battles against the British were fought at Muizenberg in 1795 and
+            <div class="cities clearfix">
+                <div class="long">
+                    <h1>Long-street</h1>
+                    <img src="pictcures/long.webp" alt="long-street" style="float:right">
+
+                    <p>Long Street could be described as the funkiest and loudest street in Cape Town, bustling with
+                        markets and
+                        boerewors roll stands during the day and hosting parties of all kinds once the sun sets.</p>
+                    <!--Once the vintage clothing shops and designers alleys are closed, attention is turned to the
+                        plethora of
+                        bars, restaurants, pubs and clubs lining this iconic road. This road is always busy but in the
+                        summertime locals and foreigners explore out onto the pavements at side walk cafes, sip
+                        cocktails
+                        beneath umbrellas and party on the rooftops.
+                    Places like Kennedys, Long Street Café and Mr. Pickwick’s have firmly made their mark and still
+                        attract
+                        loyal customers. Newer restaurants such as Galbi, a Korean BBQ spot gather new followers in
+                        search of
+                        different tastes whilst Royale is still said to produce the best gourmet burgers in the Western
+                        Cape.
+                    
+                    Once you’ve had your fill of pre-drinks and food, party the night away at Fiction with its mix of
+                        Indie,
+                        Drum and Bass or dubstep nights or the Waiting Room complements with a rooftop lounge, sexy
+                        soulful
+                        beats and Hip Hop nights bound to keep you grooving.</p>-->
+                </div>
+
+                <div class="green">
+                    <h1>Green-market</h1>
+                    <img src="pictcures/green.jpg" alt="green-market" style="float:right;">
+
+                    <p>Greenmarket Square is one of the liveliest hubs in Cape Town. It’s the second oldest public space
+                        in Cape
+                        Town, after the Grand Parade. There are many things to do at Greenmarket Square, from exploring
+                        the
+                        market and grabbing a bite to eat, to exploring the art and discovering the story of the
+                        historic
+                        cobbled square.</p>
+                    <!-- Every morning, traders lug carts loaded with wares to the square to set up, and by the the time
+                        the rest
+                        of the city awakes the cobbled square is a bustling market filled with curios, food, buskers,
+                        jewellery,
+                        clothing, and nick-nacks. This is one of the best places in Cape Town to buy curios and gifts
+                        for your
+                        loved ones back home, while supporting the entrepreneurial traders. There are stunning canvas
+                        artworks
+                        on sale, along with leather goods like sandals, hand-crafted jewellery, ornaments, and much
+                        more. You
+                        could spend hours weaving between the colourful stalls, meeting some eccentric local characters
+                        and
+                        finding treasures to take home with you. Remember that while bargaining is a big part of the
+                        informal
+                        economy, the traders make their living on these sales so always pay a fair price and don’t
+                        haggle just
+                        for the sake of it.-->
+                </div>
+
+                <div class="castle">
+                    <h1>Castle of Good Hope </h1>
+                    <img src="pictcures/castle.jpg" alt="castle-of-good-hope" style="float: right">
+
+                    <p>The first stone was laid on 2 January 1666 and it was completed by April 1679
+                        The materials used to build the Castle were local and included rock cut from the granite
+                        outcrop on
+                        Signal Hill, and blue slate and shells – transported from Robben Island
+                        he Castle was built by soldiers, volunteers, slaves and Khoi undergoing punishment.</p>
+                    <!-- The
+                            building
+                            housed everything from a church, bakery and living quarters, to various workshops, shops and
+                            prison
+                            cells, among other facilities-->
+                    <!--<li>The Castle was never attacked. Battles against the British were fought at Muizenberg in 1795 and
                     Blaauwberg in 1806
                 </li>
                 <li>The Castle of Good Hope was not built by Jan Van Riebeeck. A four-pointed clay and timber fort was
@@ -254,11 +295,11 @@
                     On a visit to the Castle today you can expect to pay R28 entry for adults, and R12 for children
                     under the age of 16. You can even see a blacksmith in action – just as he would have operated during
                     the 17th and 18th centuries when castles housed their own forges.</li>
-            </ul>
+            </ul>-->
 
-            <p></p>
+                </div>
+            </div>
         </div>
-    </div>
 </body>
 </head>
 
