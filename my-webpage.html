@@ -102,18 +102,40 @@
         }
 
 
-
-        .cities {
-            display: flex;
-        }
-
-        .cities>div {
-            flex: 0, 1;
-        }
-
         img {
-            padding: 10px;
+            padding: 5px;
             width: 200px;
+        }
+        @media (min-width:800px) {
+            .green img{
+                float: right;
+            }
+            .castle img{
+                float: right;
+            }
+            .long {
+                float: left;
+                display: block;
+            }
+            .green{
+                float: left;
+                display: block;
+            }
+            .castle{
+                float: left;
+                display: block;
+            }
+        }
+        
+        @media (min-width:800px) {
+            .cities {
+                display: flex;
+            }
+        }
+        @media(max-width:799px){
+            .green img{
+                float: left;
+            }
         }
     </style>
 
@@ -209,15 +231,19 @@
 
         </div>-->
 
-            <div class="cities clearfix">
-                <div class="long">
+            <div class="cities ">
+                <div class="long clearfix">
                     <h1>Long-street</h1>
                     <img src="pictcures/long.webp" alt="long-street" style="float:right">
-
-                    <p>Long Street could be described as the funkiest and loudest street in Cape Town, bustling with
+                    <ul>
+                        <li>Long Street could be described as the funkiest and loudest street in Cape Town</li>
+                        <li>ubstling with markets and</li>
+                        <li>bars, restaurants, pubs and clubs lining this iconic road.</li>
+                    </ul>
+                    <!--<p>Long Street could be described as the funkiest and loudest street in Cape Town, ubstling with
                         markets and
                         boerewors roll stands during the day and hosting parties of all kinds once the sun sets.</p>
-                    <!--Once the vintage clothing shops and designers alleys are closed, attention is turned to the
+                    Once the vintage clothing shops and designers alleys are closed, attention is turned to the
                         plethora of
                         bars, restaurants, pubs and clubs lining this iconic road. This road is always busy but in the
                         summertime locals and foreigners explore out onto the pavements at side walk cafes, sip
@@ -237,18 +263,22 @@
                         beats and Hip Hop nights bound to keep you grooving.</p>-->
                 </div>
 
-                <div class="green">
+                <div class="green clearfix">
                     <h1>Green-market</h1>
-                    <img src="pictcures/green.jpg" alt="green-market" style="float:right;">
-
-                    <p>Greenmarket Square is one of the liveliest hubs in Cape Town. It’s the second oldest public space
+                    <img src="pictcures/green.jpg" alt="green-market" >
+                    <ul>
+                        <li>Greenmarket Square is one of the liveliest hubs in Cape Town.</li>
+                        <li>It’s the second oldest public space in Cape</li>
+                        <li>Every morning, traders lug carts loaded with wares to the square to set up</li>
+                    </ul>
+                    <!--<p>Greenmarket Square is one of the liveliest hubs in Cape Town. It’s the second oldest public space
                         in Cape
                         Town, after the Grand Parade. There are many things to do at Greenmarket Square, from exploring
                         the
                         market and grabbing a bite to eat, to exploring the art and discovering the story of the
                         historic
                         cobbled square.</p>
-                    <!-- Every morning, traders lug carts loaded with wares to the square to set up, and by the the time
+                     Every morning, traders lug carts loaded with wares to the square to set up, and by the the time
                         the rest
                         of the city awakes the cobbled square is a bustling market filled with curios, food, buskers,
                         jewellery,
@@ -267,16 +297,20 @@
                         for the sake of it.-->
                 </div>
 
-                <div class="castle">
+                <div class="castle clearfix">
                     <h1>Castle of Good Hope </h1>
-                    <img src="pictcures/castle.jpg" alt="castle-of-good-hope" style="float: right">
-
-                    <p>The first stone was laid on 2 January 1666 and it was completed by April 1679
+                    <img src="pictcures/castle.jpg" alt="castle-of-good-hope" style="float:right">
+                    <ul>
+                        <li>he first stone was laid on 2 January 1666 and it was completed by April 1679</li>
+                        <li>Castle was built by soldiers, volunteers, slaves and Khoi undergoing punishment.</li>
+                        <li>The Castle of Good Hope was not built by Jan Van Riebeeck.</li>
+                    </ul>
+                    <!-- <p>The first stone was laid on 2 January 1666 and it was completed by April 1679
                         The materials used to build the Castle were local and included rock cut from the granite
                         outcrop on
                         Signal Hill, and blue slate and shells – transported from Robben Island
                         he Castle was built by soldiers, volunteers, slaves and Khoi undergoing punishment.</p>
-                    <!-- The
+                    The
                             building
                             housed everything from a church, bakery and living quarters, to various workshops, shops and
                             prison
