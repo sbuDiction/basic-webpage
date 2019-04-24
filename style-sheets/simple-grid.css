@@ -173,7 +173,7 @@ p {
 }
 
 .row::after {
-	content: "";
+	content: "- Very important";
 	display: table;
 	clear: both;
 }
