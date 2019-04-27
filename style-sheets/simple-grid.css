@@ -173,7 +173,7 @@ p {
 }
 
 .row::after {
-	content: "- Very important";
+	content: "- Demo";
 	display: table;
 	clear: both;
 }
@@ -247,4 +247,17 @@ p {
     width: 75%;
     max-width: 60rem;
   }
+}
+
+
+/*this is my css code for extra design layout*/
+
+/*table {
+  border-collapse: #4a567edc
+}*/
+
+
+table, tr, th, td{
+  border: 1px solid black;
+  width: 350px;
 }
