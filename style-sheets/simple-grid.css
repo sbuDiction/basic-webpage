@@ -261,3 +261,8 @@ table, tr, th, td{
   border: 1px solid black;
   width: 350px;
 }
+
+
+.place img {
+  float: left;
+}
