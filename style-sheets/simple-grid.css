@@ -262,5 +262,10 @@ table, tr, th, td{
   width: 350px;
 }
 
+@media (max-width:799px) {
+  .green img {
+    float: left;
+  }
+}
 
 
