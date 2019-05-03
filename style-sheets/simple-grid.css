@@ -173,7 +173,7 @@ p {
 }
 
 .row::after {
-	content: "- Demo";
+	content: "";
 	display: table;
 	clear: both;
 }
