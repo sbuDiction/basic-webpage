@@ -173,7 +173,11 @@ p {
 }
 
 .row::after {
+<<<<<<< HEAD
 	content: " ";
+=======
+	content: "-  ";
+>>>>>>> 7510ebb1d7173083b1ae211a4a4e793eb5daf643
 	display: table;
 	clear: both;
 }
